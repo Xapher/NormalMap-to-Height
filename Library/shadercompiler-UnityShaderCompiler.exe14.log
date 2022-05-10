@@ -1,0 +1,31 @@
+Base path: 'H:/2020.2.1f1/Editor/Data', plugins path 'H:/2020.2.1f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 4 at TestGetHeight.compute(15): undeclared identifier 'working'
+  api=4 insize=350 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=404 outsize=452 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=591 outsize=528 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=647 outsize=746 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=625 outsize=520 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  api=4 insize=585 outsize=654 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 4 at TestGetHeight.compute(22): invalid type for index - index must be a scalar, or a vector with the correct number of dimensions
+  api=4 insize=806 outsize=0 ok=0

@@ -1,0 +1,33 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+Texture2D Working;
+
+struct AngleOfPixel {
+    float3 colorVector;
+    float angle;
+};
+
+RWStructuredBuffer<AngleOfPixel> stuffs;
+
+[numthreads(10,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    float3 up = float3(0.0, 1.0, 0.0);
+    // TODO: insert actual code here!
+    //before cos, 0 = 90* and 1 = 0* * = degree
+    float3 vec = Working[id.xy].rgb;
+    float magnitude = sqrt(pow(vec.r, 2) + pow(vec.g, 2) + pow(vec.b, 2));
+    float upMag = 1;
+    float beforeCos = ((vec.r * up.x) + (vec.g * up.y) + (vec.b * up.z)) / (magnitude * upMag);
+    float angle = acos(beforeCos);
+    AngleOfPixel p = stuffs[id.x];
+    p.colorVector = vec;
+    p.angle = vec.r;
+    stuffs[id.x] = p;
+    Result[id.xy] = float4(beforeCos, beforeCos, beforeCos, 1.0);
+    
+}

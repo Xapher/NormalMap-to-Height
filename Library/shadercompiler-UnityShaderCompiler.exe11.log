@@ -1,0 +1,42 @@
+Base path: 'H:/2020.2.1f1/Editor/Data', plugins path 'H:/2020.2.1f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 4 at TestGetHeight.compute(17): undeclared identifier 'SV_DispatchThreadID'
+  api=4 insize=270 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 2 plat 4 at TestGetHeight.compute(14): syntax error: unexpected token '='
+  api=4 insize=379 outsize=0 ok=0
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  api=4 insize=317 outsize=452 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=453 outsize=452 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=669 outsize=682 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=611 outsize=309 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=611 outsize=1014 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at TestGetHeight.compute(8): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): comma expression used where a vector constructor may have been intended
+  error: 1 plat 4 at TestGetHeight.compute(14): potentially unintended use of a comma expression in a variable initializer
+  api=4 insize=623 outsize=528 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=597 outsize=528 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=598 outsize=528 ok=1
+Cmd: compileComputeKernel
+  api=4 insize=613 outsize=528 ok=1
